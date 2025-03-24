@@ -9,8 +9,8 @@
   width: 100%;
   /* background-image: url('/background.png');
   background-size:cover; */
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   text-align: center;
   color: white;
   font-family: "Inter", sans-serif;

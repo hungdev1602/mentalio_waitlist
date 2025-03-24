@@ -1,7 +1,6 @@
-import logo from "/logo.png"
+import logo from "/logo.svg"
 import background from "/background.png"
 import { toast } from 'react-toastify';
-
 function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +21,7 @@ function App() {
       <img src={background} alt="" className="background"/>
 
       <div className="logo">
-        <img src={logo} alt="" />
+        <img src={logo} alt="mentalio" />
       </div>
       <div className="title">Join to <span>mentalio</span></div>
 

@@ -14,7 +14,7 @@ function App() {
       toast.success("Успешно")
       e.target.email.value = ""
       console.log(data)
-    }).catch(error=>console.log(error))
+    }).catch(error=>toast.error(error))
   }
 
   return (

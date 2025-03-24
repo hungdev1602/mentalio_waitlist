@@ -8,6 +8,7 @@ function App() {
     const url = "https://script.google.com/macros/s/AKfycby1QHJYtrfoYpRQ4GZyDAE4P-EjlitQPDh1QD6XXMM8mXhS5rGHXFkMH9NiLEDw5KGlCA/exec"
     fetch(url, ({
       method: "POST",
+      mode: "no-cors",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: (`Email=${e.target.email.value}`)
     })).then(res=>res.text()).then(data=>{

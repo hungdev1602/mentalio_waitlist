@@ -5,12 +5,11 @@ import { toast } from 'react-toastify';
 function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url = "https://script.google.com/macros/s/AKfycby1QHJYtrfoYpRQ4GZyDAE4P-EjlitQPDh1QD6XXMM8mXhS5rGHXFkMH9NiLEDw5KGlCA/exec"
+    const url = "https://script.google.com/macros/s/AKfycbw7bUnPh8AJTJ1WVHi1dITSFWWkMTEvXYaVu9auxzP8Za9Hi1a4o9GyIHhhtQYft3z_/exec"
     fetch(url, ({
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: (`Email=${e.target.email.value}`),
-      redirect: "follow"
     })).then(res=>res.text()).then(data=>{
       toast.success("Успешно")
       e.target.email.value = ""

@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url = "https://script.google.com/macros/s/AKfycbw7bUnPh8AJTJ1WVHi1dITSFWWkMTEvXYaVu9auxzP8Za9Hi1a4o9GyIHhhtQYft3z_/exec"
+    const url = "https://script.google.com/macros/s/AKfycby1QHJYtrfoYpRQ4GZyDAE4P-EjlitQPDh1QD6XXMM8mXhS5rGHXFkMH9NiLEDw5KGlCA/exec"
     fetch(url, ({
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },

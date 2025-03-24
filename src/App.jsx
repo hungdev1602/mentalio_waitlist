@@ -27,7 +27,7 @@ function App() {
       </div>
       <div className="title">Join to <span>mentalio</span></div>
 
-      <div className="desc">Получите одним из первых к революционной платформе по обучению и получите 1 месяц бесплатно ко всему функционалу</div>
+      <div className="desc">Получите одним из первых доступ к революционной платформе по обучению и получите 1 месяц бесплатно ко всему функционалу</div>
 
       <form className="form" onSubmit={handleSubmit}>
         <input name="email" type="email" placeholder="yourgmail@gmail.com" required={true}/>

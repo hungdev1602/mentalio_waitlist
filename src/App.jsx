@@ -9,7 +9,8 @@ function App() {
     fetch(url, ({
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: (`Email=${e.target.email.value}`)
+      body: (`Email=${e.target.email.value}`),
+      redirect: "follow"
     })).then(res=>res.text()).then(data=>{
       toast.success("Успешно")
       e.target.email.value = ""

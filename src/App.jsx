@@ -1,4 +1,4 @@
-import logo from "/logo.svg"
+import { ReactComponent as Logo } from "../public/logo.svg?react";
 import background from "/background.png"
 import { toast } from 'react-toastify';
 function App() {
@@ -21,7 +21,7 @@ function App() {
       <img src={background} alt="" className="background"/>
 
       <div className="logo">
-        <img src={logo} alt="mentalio" />
+        <Logo aria-label="mentalio" />
       </div>
       <div className="title">Join to <span>mentalio</span></div>
 

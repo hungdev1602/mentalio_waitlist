@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+.main{
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url('/background.png');
+  background-size:cover; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  padding-top: 150px;
+  position: relative;
+}
+
+.background{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.logo{
+  width: 80px;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title{
+  margin-top: 34px;
+  font-size: 73px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.title span{
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.desc{
+  font-size: 14px;
+  width: 580px;
+  margin: 20px auto 0 auto;
+  opacity: 0.3;
+  line-height: 19px;
+}
+
+.form{
+  margin: 43px auto 0 auto;
+  width: 644px;
+  background: #00000070;
+  border-radius: 15px;
+  position: relative;
+}
+
+.form input{
+  width: 100%;
+  padding: 23px 195px 23px 23px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+
+.form button{
+  position: absolute;
+  right: 13px;
+  top: 8px;
+  height: 48px;
+  border-radius: 15px;
+  padding: 0 34px;
+  cursor: pointer;
+  color: white;
+  border: none; /* Thêm border trong suốt để tạo không gian cho border-image */
+  background-image: linear-gradient(to right, #192E8D, #5900FF); /* Gradient cho nền */
+  background-origin: border-box; /* Đảm bảo gradient nền không bị ảnh hưởng bởi border */
+  background-clip: padding-box, border-box; /* Đảm bảo gradient nền chỉ áp dụng cho phần padding box */
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5); /* Shadow trắng bên trong, phía trên */
+}
+
+@media (max-width: 767.98px){
+  .main{
+    padding-top: 100px;
+  }
+
+  .title {
+    font-size: 50px;
+    margin-top: 15px;
+  }
+
+  .desc {
+    font-size: 12px;
+    margin: 10px auto 0 auto;
+  }
+
+  .form {
+    width: 90%;
+    margin: 30px auto 0 auto;
+  }
+}
+
+@media (max-width: 575.98px){
+  .main {
+    padding-top: 35%;
+  }
+  .desc {
+    width: 90%;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .form input{
+    padding: 20px 35% 20px 20px;
+  }
+
+  .form button{
+    padding: 0 15px;
+    height: 41px;
+  }
+}

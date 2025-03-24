@@ -1,4 +1,4 @@
-import logo from "/logo.svg"
+import logo from "/logo.png"
 import background from "/background.png"
 import { toast } from 'react-toastify';
 
